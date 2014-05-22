@@ -1,0 +1,25 @@
+<div class="widget-container widget-profile boxed">
+    <div class="inner clearfix">
+        <a class="btn btn-small btn-green" hidefocus="true" style="outline: none;" href="/blogs/create">
+            <span>发表</span>
+        </a>
+    </div>
+</div>
+
+<div class="widget-container widget-profile boxed widget-list" ng-repeat="blog in blogs">
+    <div class="inner clearfix">
+        <div class="word-title">[[blog.title]]</div>
+        <div class="word-content">[[blog.content.substr(0, 100)]]...</div>
+        <div class="follow" style="float: right; margin-right: 10px;">
+            <a class="btn btn-small btn-green" hidefocus="true" style="outline: none;" href="/blogs/[[blog._id]]">
+                <span class="viewblog" onclick="javascript: void(0);">阅览(1675)</span>
+            </a>
+        </div>
+        <div class="follow" style="float: right; margin-right: 10px;">
+            <a href="#" class="btn btn-small btn-gray" hidefocus="true" style="outline: none;">
+                <span class="viewblog" onclick="javascript: void(0);">鉴藏(158)</span>
+            </a>
+        </div>
+        <span style="float: right; margin-right: 30px;margin-top: 8px;font-size:8px;">[[blog.createTime]]</span>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<form id="postForm">
+     <!-- Contact form -->
+    <div class="add-comment styled boxed" id="addcomments">
+        <div class="add-comment-title">
+            <h3>Write a message</h3>
+        </div>
+        <div class="comment-form">
+            <!-- Fire Text Editor -->
+            <form action="#" method="post" id="commentForm">
+                <div class="form-inner">
+                    <div class="field_text lightPlaceholder">
+                        <input name="_id" id="_id" type="hidden" ng-model="blog._id"/>
+                        <label for="title" class="label_title">Subject:</label>
+                        <input type="text" name="title" id="title" value="" placeholder="ex. Electrosoul system" hidefocus="true" style="outline: none;" ng-model="blog.title">
+                    </div>
+                    <div class="field_text field_textarea">
+                        <label for="content" class="label_title">Message:</label>
+                        <textarea name="content" id="content" hidefocus="true" style="height: 30em;" ng-model="blog.content"></textarea>
+                    </div>
+                </div>
+                <div class="rowSubmit">
+                    <a onclick="window.history.back()" href="#" class="link-reset btn btn-middle btn-gray" hidefocus="true" style="outline: none;">
+                        <span class="gradient">返回</span>
+                    </a>
+                    <span class="btn btn-send">
+                        <input type="button" id="post" value="发表" hidefocus="true" class="gradient" style="outline: none;" ng-click="save(blog)">
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/ Contact form -->
+</form>
