@@ -1,3 +1,4 @@
+<script type="text/javascript" src="/js/test.js"></script>
 <form id="postForm">
      <!-- Contact form -->
     <div class="add-comment styled boxed" id="addcomments">
@@ -12,6 +13,16 @@
                         <input name="_id" id="_id" type="hidden" ng-model="blog._id"/>
                         <label for="title" class="label_title">Subject:</label>
                         <input type="text" name="title" id="title" value="" placeholder="ex. Electrosoul system" hidefocus="true" style="outline: none;" ng-model="blog.title">
+                    </div>
+                    <div class="field_select">
+                        <label for="tags" class="label_title">Tags:</label>
+                        <select name="tags" id="tags" multiple data-placeholder="Select Tag" ng-model="blog.tags">
+                            <option value='example1@gmail.com'>Mike Charley</option>
+                            <option value='example2@gmail.com'>Andy Lurs</option>
+                            <option value='example3@gmail.com'>Toby Lightman</option>
+                            <option value='example4@gmail.com'>Lene Marlin</option>
+                            <option value='example5@gmail.com'>Deep Purple</option>
+                        </select>
                     </div>
                     <div class="field_text field_textarea">
                         <label for="content" class="label_title">Message:</label>
@@ -31,3 +42,4 @@
     </div>
     <!--/ Contact form -->
 </form>
+

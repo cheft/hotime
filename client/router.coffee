@@ -15,12 +15,12 @@ ngMeteor.config [
 
             .when('/blogs/edit/:id', 
                 templateUrl: '/views/blog/form.html'
-                controller: 'BlogCtrl'
+                controller: 'BlogDetailCtrl'
             )
 
             .when('/blogs/:id', 
                 templateUrl: '/views/blog/detail.html'
-                controller: 'BlogCtrl'
+                controller: 'BlogDetailCtrl'
             )
 
             .otherwise(
